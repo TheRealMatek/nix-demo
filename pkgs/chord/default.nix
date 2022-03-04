@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   pname = "chord";
-  version = "0.1.0";
+  version = "0.1.1";
 
   src = fetchgit {
     url = "https://gitlab.inria.fr/adfaure/chord-tuto-nix-2019";

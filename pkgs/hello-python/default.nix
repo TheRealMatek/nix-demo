@@ -1,3 +1,4 @@
+{}:
 with import <nixpkgs> {};
 
 python3Packages.buildPythonApplication rec {

@@ -6,5 +6,5 @@ setup(name='Hello world',
       author='Matija P',
       author_email='gward@python.ne',
       url='',
-      packages=['hello'],
+      scripts=['hello.py'],
      )

@@ -1,8 +1,8 @@
 with import <nixpkgs> {};
 
-python3Packages.buildPythonPackage {
+python3Packages.buildPythonApplication rec {
  pname= "hello-python";
- version = "1.1";
+ version = "1.2";
  src = ./src;
  doCheck = false;
 }

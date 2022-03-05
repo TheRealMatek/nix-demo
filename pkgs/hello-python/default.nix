@@ -1,7 +1,8 @@
 with import <nixpkgs> {};
 
-mkShell {
- name= "python-build-env";
+python3Packages.buildPythonPackage {
+ pname= "hello-python";
  version = "1.1";
  src = ./src;
+ doCheck = false;
 }

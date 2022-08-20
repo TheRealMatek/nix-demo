@@ -1,6 +1,6 @@
-{}: with import <nixpkgs> {};
+{}: with import (import ../../nix/sources.nix).nixpkgs {};
 
-let demo = import <demo> {};
+let demo = import (import ../../nix/sources.nix).demo {};
 in stdenv.mkDerivation rec {
   pname = "manus-core";
   version = "0.1.1";
@@ -12,7 +12,10 @@ in stdenv.mkDerivation rec {
   };
 
   buildInputs = [
-    demo.pkgs.echolib
+    python3
+    libyamlcpp
+    demo.ary
+    demo.echolib
     orocos-kdl
     opencv
     cmake

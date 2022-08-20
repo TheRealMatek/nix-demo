@@ -1,4 +1,4 @@
-{}: with import <nixpkgs> {};
+{}: with import (import ../../nix/sources.nix).nixpkgs {};
 
 stdenv.mkDerivation rec {
   pname = "open-servo";

@@ -1,7 +1,7 @@
-{}: with import <nixpkgs> {};
+{}: with import (import ../../nix/sources.nix).nixpkgs {};
 
 let
-  python = python3.withPackages (ps : with ps; [ pybind11 numpy ]);
+  python = python3.withPackages (ps : with ps; [ pybind11 numpy setuptools]);
 in stdenv.mkDerivation rec {
   pname = "echolib";
   version = "0.1.1";

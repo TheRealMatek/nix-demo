@@ -1,0 +1,26 @@
+{
+    "demo": {
+        "branch": "main",
+        "description": "Demo repository for nix packages",
+        "homepage": null,
+        "owner": "TheRealMatek",
+        "repo": "nix-demo",
+        "rev": "73b94676216e0af198efa3aec9aa069f9ea844fd",
+        "sha256": "187imgk0fglmzxqzl24yh9adlnp5vbqzlgxqh9pik0gg7dzm7dmc",
+        "type": "tarball",
+        "url": "https://github.com/TheRealMatek/nix-demo/archive/73b94676216e0af198efa3aec9aa069f9ea844fd.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "release-21.05",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "5f244caea76105b63d826911b2a1563d33ff1cdc",
+        "sha256": "1xlgynfw9svy7nvh9nkxsxdzncv9hg99gbvbwv3gmrhmzc3sar75",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/5f244caea76105b63d826911b2a1563d33ff1cdc.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
